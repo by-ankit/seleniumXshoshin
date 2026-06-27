@@ -5,6 +5,7 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
@@ -43,7 +44,12 @@ public class BaseClass {
     public void setUp(@Optional("JavaScriptAlerts_url") String urlKey, ITestResult result) {
         String browser = prop.getProperty("browser");
         if(browser.equalsIgnoreCase("chrome")) {
-            driver = new ChromeDriver();
+            /**
+             * line 50-51 done for GitHub actions headless workflow
+             */
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--headless");
+            driver = new ChromeDriver(options);
         }
         else {
             throw new IllegalArgumentException("Browser not supported. " + browser);
