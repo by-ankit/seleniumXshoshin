@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="ShoshinCourse">
+    <test name="Question 1">
+        <parameter name="urlKey" value="GitHub_url"/>
+        <classes>
+            <class name="GitHub_Question1"/>
+        </classes>
+    </test>
+
+    <test name="Question 2">
+        <parameter name="urlKey" value="CountryPopulation_url"/>
+        <classes>
+            <class name="CountryPopulation_Question2"/>
+        </classes>
+    </test>
+
+    <test name="Question 3">
+        <parameter name="urlKey" value="JavaScriptAlerts_url"/>
+        <classes>
+            <class name="JavaScriptAlert_Question3"/>
+        </classes>
+    </test>
+
+    <test name="Question 4">
+        <parameter name="urlKey" value="DynamicContent_url"/>
+        <classes>
+            <class name="DynamicContent_Question4"/>
+        </classes>
+    </test>
+
+    <test name="Question 5">
+        <parameter name="urlKey" value="Wikipedia_url"/>
+        <classes>
+            <class name="Wikipedia_Question5"/>
+        </classes>
+    </test>
+
+    <test name="Question 6">
+        <parameter name="urlKey" value="QuotesToScrape_url"/>
+        <classes>
+            <class name="QuotesToScrape_Question6"/>
+        </classes>
+    </test>
+
+    <test name="Question 7">
+        <parameter name="urlKey" value="SauceDemo_url"/>
+        <classes>
+            <class name="SauceDemo_Question7"/>
+        </classes>
+    </test>
+</suite>
