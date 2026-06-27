@@ -18,7 +18,7 @@ public class GitHubHomePage extends ActionDriver{
     /**
      * Locators
      */
-    private By signUpButton = By.xpath("//a[contains(text(),'Sign up')]");
+    private By signUpButton = By.cssSelector(".HeaderMenu-link--sign-up");
     private By signUpEmail = By.cssSelector("#email");
     private By signUpPassword = By.cssSelector("#password");
     private By signUpUsername = By.cssSelector("#login");
